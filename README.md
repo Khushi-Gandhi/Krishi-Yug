@@ -1,1 +1,1 @@
-# Minor-1---Krishi-Yug
+A farming portal for everyone out there.
