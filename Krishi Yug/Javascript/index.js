@@ -1,6 +1,6 @@
-// js api code for contact form using www.emailjs.com
+
 function sendMail(params) {
-	alert("Your form has been submitted successfully!");
+	alert("Form has been submited sucessfully");
 	var tempParams = {
 		name: document.getElementById("name").value,
 		country: document.getElementById("countryId").value,
@@ -14,9 +14,6 @@ function sendMail(params) {
 		.then(function (res) {
 			console.log("sucess", res.status);
 		})
-
 }
 //api code ends here also added some code in header related to this api
-
-
 
