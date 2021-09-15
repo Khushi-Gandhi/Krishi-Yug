@@ -267,7 +267,7 @@ max-width:70%;
 }
 .headerfora h1 {
   margin: 0;
-  background-color:white;
+  background-color:rgba(67, 192, 67, 0.979);
   font-size: 5vw;
   position: absolute;
   top: 50%;
@@ -353,7 +353,7 @@ max-width:70%;
 }
 .headerforc h1 {
   margin: 0;
-  background-color:white;
+  background-color:rgba(67, 192, 67, 0.979);
   font-size: 5vw;
   position: absolute;
   top: 50%;
@@ -436,7 +436,7 @@ max-width:70%;
 }
 .headerforf h1 {
   margin: 0;
-  background-color:white;
+  background-color:rgba(67, 192, 67, 0.979);
   font-size: 5vw;
   position: absolute;
   top: 40%;
@@ -519,7 +519,7 @@ max-width:70%;
 }
 .headerfork h1 {
   margin: 0;
-  background-color:white;
+  background-color:rgba(67, 192, 67, 0.979);
   font-size: 5vw;
   position: absolute;
   top: 65%;
@@ -600,7 +600,7 @@ max-width:70%;
 
 
 
-.cardo
+[data-theme="dark"].cardo
 {
 	background-color:#F1F1EF;
 	line-height: 4;
