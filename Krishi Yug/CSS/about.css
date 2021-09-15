@@ -105,7 +105,7 @@ body
 .aboutdes
 {
 	/* background-color:rgb(218, 233, 226); */
-	background-color:rgb(222, 245, 234);
+	background-color:rgba(65, 207, 139, 0.233);
 	max-width:100%;
 	height:auto;
 }	
