@@ -1,6 +1,6 @@
 
 function sendMail(params) {
-	alert("Form has been submited sucessfully");
+	alert("Form has been submitted sucessfully!");
 	var tempParams = {
 		name: document.getElementById("name").value,
 		country: document.getElementById("countryId").value,

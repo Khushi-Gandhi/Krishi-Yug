@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,68 +9,123 @@
 
     <link rel="stylesheet" href="sign-in-up.css">
 </head>
+
 <body>
 
 
 
-<div id="topNav">
-    <ul id="smallNav">
-        <li>
-            <div id="google_translate_element"></div>
+    <div id="topNav">
+        <ul id="smallNav">
+            <li>
+                <div id="google_translate_element"></div>
 
-          <script type="text/javascript">
-            function googleTranslateElementInit() {
-              new google.translate.TranslateElement(
-                { pageLanguage: 'en' },
-                'google_translate_element'
-              );
-            }
-          </script>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement(
+                            { pageLanguage: 'en' },
+                            'google_translate_element'
+                        );
+                    }
+                </script>
 
-          <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
 		cb=googleTranslateElementInit">
-    </script>
-        </li>
-        <li><a href="Index.html" id="h">Home</a></li>
-    </ul>
-</div>
-
-<center>
-<div class="container">
-        <div class="blueBg">
-            <div class="box signin">
-                <h2 class="h" style="color: black;">Already have an Account ?</h2>
-                <button class="signinBtn">Sign in</button>
-            </div>
-            <div class="box signup">
-                <h2 class="h" style="color: black;">Don't have an Account ?</h2>
-                <button class="signupBtn">Sign Up</button>
-            </div>
-        </div>
-        <div class="formBx">
-            <div class="form signinForm">
-                <form>
-                    <h3>Sign In</h3>
-                    <input type="text" placeholder="Username">
-                    <input type="password" placeholder="Password">
-                    <input type="submit" value="Login">
-                    <a href="#" class="forgot">Forgot Password</a>
-                </form>
-            </div>
-
-            <div class="form signupForm">
-                <form>
-                    <h3>Sign Up</h3>
-                    <input type="text" placeholder="Username">
-                    <input type="text" placeholder="Email Address">
-                    <input type="password" placeholder="Password">
-                    <input type="password" placeholder="Confirm Password">
-                    <input type="submit" value="Register">
-                </form>
-            </div>
-        </div>
+        </script>
+            </li>
+            <li><a href="Index.html" id="h">Home</a></li>
+        </ul>
     </div>
-</center>
+
+    <center>
+        <div class="container">
+            <div class="blueBg">
+                <div class="box signin">
+                    <h2 class="h" style="color: black;">Already have an Account ?</h2>
+                    <button class="signinBtn">Sign in</button>
+                </div>
+                <div class="box signup">
+                    <h2 class="h" style="color: black;">Don't have an Account ?</h2>
+                    <button class="signupBtn">Sign Up</button>
+                </div>
+            </div>
+            <div class="formBx">
+                <div class="form signinForm">
+                    <form>
+                        <h3>Sign In</h3>
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type='button' class="submitbtn" value="Login">Login</button>
+                        <a href="#" class="forgot">Forgot Password</a>
+                    </form>
+                </div>
+
+                <div class="form signupForm">
+                    <form>
+                        <h3>Sign Up</h3>
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Email Address">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirm Password">
+                        <button type='button' class="submitbtn" value="Register"
+                            onclick="document.getElementById('pop').style.display='block'" style="width:auto;">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </center>
+
+
+
+    <div id="pop" class="modal">
+
+        <form class="modal-content animate">
+            <!-- <form class="modal-content animate" action="/action_page.php" method="post"> -->
+            <!-- <div class="imgcontainer">
+        <span onclick="document.getElementById('pop').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      </div> -->
+
+      <br>
+            <div class="popcontainer">
+                <h1><center>PLEASE VERIFY YOUR EMAIL</center></h1>
+                <label for="uname"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="uname" required>
+                <br>
+                <label for="psw"><b>Please enter the OTP</b></label>
+                <input type="text" placeholder="Enter OTP" name="psw" required>
+                <br><br>
+    
+                <button type="submit" class="popbtn" onclick="document.getElementById('pop').style.display='none';" class="cancelbtn">Verify</button>
+                <!-- <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label> -->
+            </div>
+
+
+            <!-- <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('pop').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div> -->
+        </form>
+    </div>
+
+
+
+
+    <!-- 
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script> -->
+
+
     <script>
         const signinBtn = document.querySelector('.signinBtn');
         const signupBtn = document.querySelector('.signupBtn');
@@ -88,4 +144,5 @@
     </script>
 
 </body>
+
 </html>
