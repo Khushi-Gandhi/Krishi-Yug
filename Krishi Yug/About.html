@@ -5,6 +5,9 @@
   <title>Index-Krishi Yug</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  
+  <link rel="shortcut icon" href="images\logo.jpeg" type="image/x-icon"> 
   <link rel="shortcut icon" href="images\logo.jpeg" type="image/gif">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -19,6 +22,8 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
   <link rel="stylesheet" href="CSS/dark-mode.css">
 
     <!-- bot styling -->
@@ -54,12 +59,11 @@
 
 
 
-  <nav class="navbar navbar-expand-md navbar-light
-   bg-light navbar-expand-lg fixed-top " id="a">
+  <nav class="navbar navbar-light
+  fixed-top navbar-expand-xl" id="a" >
     <a class="navbar-brand" href="index.html"><img src="images\logo.jpeg" class="logo" /></a>
-  
-  
-  
+
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -74,7 +78,7 @@
         </a>
   
         <li class="nav-item li">
-          <a class="nav-link" href="Index.html" style="color:#154734;"><strong>Home</strong></a>
+          <a class="nav-link" href="home.html" style="color:#154734;"><strong>Home</strong></a>
         </li>
 
         <li class="nav-item li">
@@ -82,29 +86,22 @@
         </li>
 
         <li class="nav-item li">
-          <a class="nav-link" href="Index.html#Services" style="color:#154734;"><strong>Services</strong></a>
+          <a class="nav-link" href="home.html#Services" style="color:#154734;"><strong>Services</strong></a>
         </li>
 
         <li class="nav-item li">
-          <a class="nav-link" href="Index.html#contact" style="color:#154734;"><strong>Contact us</strong></a>
+          <a class="nav-link" href="home.html#contact" style="color:#154734;"><strong>Contact us</strong></a>
         </li>
 
-  
         <li class="nav-item li">
           <a class="nav-link" href="https://agricoop.nic.in/programmes-schemes-listing"
-            style="color:#154734;"><strong>Programmes & Schemes</strong></a>
+            style="color:#154734;" target="_blank"><strong>Programmes & Schemes</strong></a>
         </li>
-  
-  
-  
-        <li>
-          <a class="nav-link" href="sign.html" style="color:#154734; border:darkgreen solid 1px;"><strong>
-              <center>Login/Logout</center>
-            </strong></a>
-        </li>
+
+       
         <li>
           <div id="google_translate_element"></div>
-  
+
           <script type="text/javascript">
             function googleTranslateElementInit() {
               new google.translate.TranslateElement(
@@ -113,15 +110,41 @@
               );
             }
           </script>
-          <i class="bi bi-translate"></i>
+
           <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
-  		cb=googleTranslateElementInit">
-      </script>
-  
+		cb=googleTranslateElementInit">
+    </script>
+
         </li>
+ 
+      <li></li>
+      <li></li>
+
       </ul>
     </div>
-  
+    
+      <!-- <a class="nav-link" href="#" style="color:#154734; border:darkgreen solid 1px;"><strong>
+          <center>Profile</center>
+        </strong></a> -->
+                 
+          <div class="action">
+            <div class="profile" onclick="menuToggle();">
+               <img src="images/profile1.png" id="profileImg">
+            </div>
+               <div class="menu">
+                <h3>Someone Famous<br><span>Website Designer</span></h3>
+                 <ul>
+                   <li><img src="images/profileimages/user.png" ><a href="#" >My Profiles</a></li>
+                   <li><img src="images/profileimages/envelope.png"><a href="#*">Edit Profile</a</li>
+                   <li><img src="images/profileimages/question.png"><a href="#*">Chatbot</a</li>
+                   <li><img src="images/profileimages/settings.png"><a href="#">Settings</a</li>
+                   <li><img src="images/profileimages/user.png"><a href="#" >Help</a></li>
+                   <li><img src="images/profileimages/log-out.png"><a href="sign.html">Logout</a></li>
+                 </ul>
+               </div> 
+           </div>    
+      
+    
     <!-- <hr style="border: 5px solid black;"> -->
   </nav>
   <!-- 
