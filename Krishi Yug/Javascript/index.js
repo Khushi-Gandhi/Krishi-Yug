@@ -18,17 +18,10 @@ function sendMail(params) {
 //api code ends here also added some code in header related to this api
 
 //Part of profile--on every page
-function menuToggle(){
-	const toggleMenu = document.querySelector('.menu');
+//api code ends here also added some code in header related to this api
+	function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
 	toggleMenu.classList.toggle('active')
 }
 
 
-var menu = document.getElementById('menu');
-    
-// When the user clicks anywhere outside of the menu, close it
-window.onclick = function(event) {
-	if (event.target == menu) {
-		menu.style.display = "none";
-	}
-}
