@@ -1081,7 +1081,7 @@ hr{
   height: 250px;
   top: -60px;
   left: 20px;
-  z-index: 1;
+  z-index: 0;
   
 }
 .pccontainer .card .imgBx img{
